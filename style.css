@@ -1,0 +1,28 @@
+body {
+    margin: 15px;
+    background-color: aliceblue;
+    min-width: 400px;
+}
+
+
+#input {
+    width: 99%;
+    height: 30px;
+    border: 2px solid  darkslategray ;
+}
+
+button {
+    margin-top: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    padding: 10px 20px;
+    background-color: darkslategray;
+    border: none;
+    color: wheat;
+}
+
+
+ul {
+    list-style: none;
+    padding: 0;
+}
