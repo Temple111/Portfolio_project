@@ -1,28 +1,48 @@
 body {
     margin: 15px;
     background-color: aliceblue;
-    min-width: 400px;
+    min-width: 500px;
 }
 
 
-#input {
+input {
     width: 99%;
-    height: 30px;
-    border: 2px solid  darkslategray ;
+    height: 35px;
+    font-size: 16px;
+    border: 2px solid darkslategray;
+    border-radius: 4px;
 }
+
 
 button {
-    margin-top: 5px;
-    font-family: 'Roboto', sans-serif;
+    margin-top: 8px;
+    font-family: "Poppins", sans-serif;
     font-weight: 600;
+    font-size: 16px;
+    background: #f93800;
+    color: antiquewhite;
     padding: 10px 20px;
-    background-color: darkslategray;
     border: none;
-    color: wheat;
+    border-radius: 5px;
+    
 }
-
 
 ul {
     list-style: none;
     padding: 0;
+}
+
+#save {
+    background-color: darkslategray;
+}
+
+#savetab {
+    background-color: darkslategray;
+}
+
+.deleteButton {
+    font-size: 12px;
+    padding: 0 3px;
+    margin-left: 5px;
+
 }
