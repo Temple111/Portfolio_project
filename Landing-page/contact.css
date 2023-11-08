@@ -1,0 +1,43 @@
+body {
+    text-align: center;
+    background-color: #f2f2f2; /* Change the background color as desired */
+    font-family: Arial, sans-serif; /* Change the font family as needed */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+li a {
+    margin-left: 10px;
+    text-decoration: none; /* Remove underline from email links */
+    color: #3366cc; /* Change the color of the email links */
+    font-size: 16px; /* Adjust font size as desired */
+}
+
+.li-a{
+    
+    padding-left: 3%;
+}
+/* Your existing CSS */
+
+.return-home {
+    display: block;
+    text-decoration: none;
+    color: #3366cc; /* Change color as desired */
+    margin-top: 20px; /* Adjust the margin as needed */
+    font-size: 16px; /* Adjust font size as needed */
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
