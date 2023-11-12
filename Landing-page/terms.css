@@ -1,73 +1,109 @@
-body {
-    font-family: Arial, sans-serif;
+body{
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
-    line-height: 1.6;
-}
+    background: url("images/icon7.jpg");
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-h1 {
-    text-align: center;
-    margin: 20px 0;
-}
-
-h2 {
-    color: #007bff;
-}
-
-p {
-    margin: 10px 0;
-}
-
-.p1 {
-    margin-left: 20px;
-}
-
-div {
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    margin: 20px 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-footer {
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-
-footer a {
-    color: #333;
-    text-decoration: none;
-}
-
-.return-home {
-    display: block;
-    text-decoration: none;
-    color: #3366cc; /* Change color as desired */
-    margin-top: 20px; /* Adjust the margin as needed */
-    font-size: 16px; /* Adjust font size as needed */
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    margin-left: -12px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
     
 }
 
-/* Style for the Contact Us link */
-body a {
-    display: block;
-    text-decoration: none;
-    color: #3366cc; /* Change color as desired */
-    margin-top: 20px; /* Adjust the margin as needed */
-    font-size: 16px; /* Adjust font size as needed */
+.terms-box {
+    max-width: 460px;
+    background-color: #21222A;
+    color: azure;
+    font-family: "Montserrat";
+    padding: 60px 30px;
+}
+
+.terms-text {
+    padding: 0 20px;
+    height: 400px;
+    overflow-y: auto;
+    font-size: 14px;
+    font-weight: 500px;
+    color: beige;
+}
+
+.terms-text::-webkit-scrollbar{
+    width: 5px;
+    background-color: black;
+}
+
+.terms-text::-webkit-scrollbar-thumb{
+    background-color: crimson;
+}
+
+.terms-text h2{
+   text-transform: uppercase; 
+}
+
+#acceptCheckbox{
+    margin-left: 20px;
+
+}
+
+label{
+    font-size: 13px;
     text-align: center;
-    padding: 10px;
-    width: 100%;
+
+}
+
+label span {
+    color: crimson;
+}
+
+.btn:hover{
+    opacity: .6;
+}
+
+.terms-box .download-button a{
+   background-color: rgb(28, 179, 28);
+    margin: 20px 5px 10px 20px;
+    padding: 20px 0px 0px 0px;
+    border: 1px solid black;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    height: 50px;
+    width: calc(50% - 6px);
+    border: 0;
+    border-radius: 6px;
+    font-size: 19px;
+    font-weight: 500;
+    color: whitesmoke;
+    transition: .3s linear;
+}
+
+/* Style for the disabled download button */
+#downloadButton:disabled {
+    background-color: #ddd;
+    color: #aaa;
+    cursor: not-allowed;
+}
+
+ /* Add CSS for the return link */
+ .return-home {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.return-home a {
+    text-decoration: none;
+    color: blue;
+    font-weight: bold;
+}
+
+.return-home a:hover {
+    text-decoration: underline;
 }

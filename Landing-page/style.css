@@ -1,87 +1,146 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f7f7f7;
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
 }
 
-div {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-}
 
-img {
-    display: block;
-    margin: 0 auto;
-}
-
-h1 {
-    text-align: center;
-    margin-top: 10px;
-    color: #333;
-}
-
-h2 {
+.header {
+    min-height: 100vh;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
     
-    margin-top: 20px;
-    color: #333;
+    
 }
 
-p {
-    text-align: justify;
-    line-height: 1.6;
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: black;
+    margin-bottom: 0;
+    
+}
+
+.logo {
+    font-size: 50px;
+    letter-spacing: -7px;
+    font-family: 'Rubik', sans-serif;;
+    font-weight: 500;
+    margin-left: 40px;
     margin-top: 10px;
-    color: #555;
-}
-
-h3 {
-    margin-top: 20px;
-    color: #333;
-}
-
-a {
-    display: block;
-    text-align: center;
-    margin-top: 20px;
-    text-decoration: none;
-    background-color: #f93800;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 5px;
-    width: 150px;
-    margin: 0 auto;
-}
-
-
-#download {
-    background: green;
-    margin-left: 5px;
-}
-
-a:hover {
-    background-color: #d73400;
+    color: blueviolet;
 
 }
 
-footer {
-    margin-top: 50px;
-    text-align: center;
-}
-
-nav ul {
+.nav-menu > ul {
+    display: flex;
+    flex-direction: row;
     list-style: none;
-    padding: 0;
+    margin-right: 50px;
+    margin-top: 25px;
+    
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 10px;
+.nav-menu > ul > li {
+    margin-left: 30px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;  
+    white-space: nowrap;
+    color: blueviolet;
 }
 
-small {
-    display: block;
-    margin-top: 20px;
+.nav-menu > ul > li > a:hover{
+    background-color: brown;
+    padding: 4px;
+    border-radius: 5px;
+} 
+
+
+.nav-menu > ul > li > a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: blueviolet;
+}
+
+.main-section {
     text-align: center;
-    color: #888;
+    margin-top: 0;
+    background-color: black;
+    padding-top: 3%;
+}
+
+.container {
+    text-align: start;
+    
+}
+
+.container > h1 {
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: -40px;
+    color: blueviolet;
+}
+
+.container > h2{
+    font-family: 'Rubik', sans-serif;
+    font-weight: 600;
+    margin-left: 29%;
+    margin-right: 29%;
+    color:  blueviolet;
+}
+
+.container > p{
+    
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    margin-left: 28%;
+    margin-right: 28%;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    color: beige;
+}
+
+.container > h3{
+    margin-right: 41%;
+    margin-left: 41%;
+   color: blueviolet;
+    
+}
+
+.main-section > .the-two > p {
+    margin-top: 10px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    color: beige;
+    padding-bottom: 2%;
+
+}
+
+.main-section > .the-two > p > a {
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    background-color: blueviolet;
+    color: azure;
+    font-family: 'Rubik', sans-serif;
+    font-size: 25px;
+    padding: 10px 40px;
+    margin-left: 2px;
+    margin-right: 2px;
+    border-radius: 5px;
+    transition: 0.3s; /* for the hover*/
+
+}
+
+.main-section > .the-two > p > a:hover{
+    background-color: rgb(75, 189, 75);
 }

@@ -1,0 +1,101 @@
+body{
+    margin: 0;
+    padding: 0;
+    background:  #21222A;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    font-family: "Montserrat", sans-serif;
+
+    
+}
+
+.terms-box {
+    max-width: 30vw;
+    background-color: #282D35;
+    color: azure;
+    font-family: "Montserrat";
+    padding: 60px 30px;
+    overflow: hidden;
+    border-radius: 20px;
+    margin-right: 10%;
+   
+
+}
+
+.terms-text {
+    padding: 0 20px;
+    height: 400px;
+    overflow-y: auto;
+    font-size: 14px;
+    font-weight: 500px;
+    color: beige;
+    margin-bottom: 20px;
+}
+
+.terms-text::-webkit-scrollbar{
+    width: 10px;
+    background-color: black;   
+}
+
+.terms-text::-webkit-scrollbar-thumb{
+    background-color: crimson;
+     
+}
+
+.terms-text h2{
+   text-transform: uppercase; 
+}
+
+ /* Add CSS for the return link */
+ .return-home {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.return-home a {
+    margin-top: 50px;
+    text-decoration: none;
+    color: blue;
+    font-weight: bold;
+}
+
+
+.terms-box1{
+    
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+.terms-box > .terms-text > .team-member > ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row; 
+    background-color: #21222A;
+    justify-content: space-between;
+    font-size: 20px;
+    padding-left: 0;
+    margin-right: 40%;
+    
+
+}
+
+.terms-box  .terms-text  .team-member  ul  li {
+    padding-top: 4px;
+}
+
+.terms-box  .terms-text  .team-member  ul  li a #icon,
+.terms-box  .terms-text  .team-member  ul  li a #icon1,
+.terms-box  .terms-text  .team-member  ul  li a #icon2 {
+    color: blueviolet;
+    font-size: 28px;
+}
+
+.github-repo a{
+    color: blue; 
+}
+

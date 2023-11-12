@@ -1,33 +1,52 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Terms of Service</title>
-    <link rel="stylesheet" type="text/css" href="terms.css">
+    <meta charset="UTF-8">
+    <title>Terms Of Service</title>
+    <link rel="stylesheet" href="terms.css">
 </head>
 <body>
-    <h1>Terms of Service</h1>
-    <p class="p1">Effective Date: November 6, 2023</p>
+    <div class="terms-box">
+        <div class="terms-text">
+            <h1>Terms Of Service</h2>
+            <p>Effective Date: November 6, 2023</p>
+            <h2>Introduction</h2>
+            <p>This Privacy Policy explains how we collect, use, and protect your personal information when you use the Leads Management Extension (referred to as “the Extension”). By using the Extension, you consent to the practices described in this policy. Please read this policy carefully.</p>
+            <h2>Information We Collect</h2>
+            <p>We do not collect any personal information from users of the Extension. The Extension is designed to work locally within your web browser and does not require any user account or login. It stores leads or contact information locally on your device.</p>
+        </div>
 
-    <div>
-        <h2>Acceptance of Terms</h2>
-        <p>
-            By using the Leads Management Extension (referred to as “the Extension”), you agree to abide by these Terms of Service. If you do not agree to these terms, please do not use the Extension.
-        </p>
+        <!-- Add a checkbox for accepting terms -->
+        <div class="accept-terms">
+            <input type="checkbox" id="acceptCheckbox">
+            <label for="acceptCheckbox">I Agree to the <span>Terms of Service</span> and I read the Privacy Notice</label>
+        </div>
+
+        <!-- Add a download button -->
+        <div class="download-button">
+            <a href="LeadTracker.zip" class="btn green-btn" id="downloadButton" disabled  download="true" >Download</a>
+        </div>
+        <!-- Add a "Return to Home Page" link -->
+        <div class="return-home">
+            <a href="index.html" target="_blank">Return to Home Page</a>
+        </div>
     </div>
 
-    <div>
-        <h2>Use of the Extension</h2>
-        <p>
-            The Extension is provided for your personal or business use. You may use the Extension in compliance with these terms and all applicable local, state, and federal laws.
-        </p>
-    </div>
+    <script>
+        // Enable the download button when the checkbox is checked
+        document.getElementById('acceptCheckbox').addEventListener('change', function () {
+    // Update the button disabled property based on the checkbox status
+        document.getElementById('downloadButton').disabled = !this.checked;
+    });
 
-    <!-- Other sections of your Terms of Service in appropriate paragraph elements -->
-    
-    <a href="contact.html" target="_blank">Contact Us</a>
-    <footer>
-        <a href="index.html" class="return-home">Return to Home Page</a>
-    </footer>
-
+    // Add a click event listener to the download button
+    document.getElementById('downloadButton').addEventListener('click', function (event) {
+        // Check if the checkbox is checked before triggering the download
+        if (!document.getElementById('acceptCheckbox').checked) {
+            // If the checkbox is not checked, prevent the download
+            event.preventDefault();
+        }
+    });
+    </script>
 </body>
 </html>
